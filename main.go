@@ -5,24 +5,26 @@ import (
 )
 
 func main() {
-  smoke_say := "two number %d\n"
+  atoz := "the quick brown fox jumps over the lazy dog\n"
+  literal := `the quick brown fox jumps over the lazy dog\n`
 
-  nine := uint32(9)
+  fmt.Printf("%s\n", atoz[0:9])
+  fmt.Printf("%s\n", atoz[:9])
+  fmt.Printf("%s\n", atoz[15:19])
+  fmt.Printf("%s\n", atoz[15:])
 
-  pi := float32(3.14)
+  for index, character := range atoz {
+    fmt.Printf("index, character: %d, %c\n", index, character)
+  }
 
-  fmt.Printf("Value: %.2f\n", pi)
-  fmt.Printf(smoke_say, nine)
+  for _, character := range atoz {
+    fmt.Printf("character: %c\n", character)
+  }
 
-  var notTrue bool
+  for index := range atoz {
+    fmt.Printf("index: %d\n", index)
+  }
 
-  fmt.Printf("Is true? %t\n", notTrue)
-
-  notFalse := true
-
-  fmt.Printf("Is true? %t\n", notFalse)
-
-  number := byte(65)
-
-  fmt.Printf("byte value: %x\n", number)
+  fmt.Printf("length: %d\n", len(atoz))
+  fmt.Printf("literal: %s\n", literal)
 }
