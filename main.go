@@ -4,12 +4,13 @@ import (
   "fmt"
 )
 
-const (
-  message = "iota: %d %d\n"
-  answer1 = iota*2
-  answer2
-)
-
 func main() {
-  fmt.Printf(message, answer1, answer2)
+  smoke_say := "two number %d\n"
+
+  nine := uint32(9)
+
+  pi := float32(3.14)
+
+  fmt.Printf("Value: %.2f\n", pi)
+  fmt.Printf(smoke_say, nine)
 }
