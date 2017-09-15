@@ -13,4 +13,12 @@ func main() {
 
   fmt.Printf("Value: %.2f\n", pi)
   fmt.Printf(smoke_say, nine)
+
+  var notTrue bool
+
+  fmt.Printf("Is true? %t\n", notTrue)
+
+  notFalse := true
+
+  fmt.Printf("Is true? %t\n", notFalse)
 }
