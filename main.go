@@ -21,4 +21,8 @@ func main() {
   notFalse := true
 
   fmt.Printf("Is true? %t\n", notFalse)
+
+  number := byte(65)
+
+  fmt.Printf("byte value: %x\n", number)
 }
