@@ -3,3 +3,4 @@
 
 ### Topics
 1. Hello, World!
+2. Types, Variables and Declarations
