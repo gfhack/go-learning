@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-  var message string
+  message := "The answer to life is %d!\n"
 
-  message = "Hello, World!\n"
+  answer := 42
 
-  fmt.Printf(message)
+  fmt.Printf(message, answer)
 }
